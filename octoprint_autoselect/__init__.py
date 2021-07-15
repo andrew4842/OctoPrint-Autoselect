@@ -46,7 +46,7 @@ class AutoselectPlugin(octoprint.plugin.EventHandlerPlugin):
 			sd = False
 
 		self._logger.info("Selecting {} on {} that was just uploaded".format(filename, storage))
-		self._printer.select_file(path, sd, False)
+		self._printer.select_file(path, sd, True)
 
 	##~~ Softwareupdate hook
 
